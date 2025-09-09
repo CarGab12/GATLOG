@@ -1,0 +1,112 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0B4677, #1E88E5, #64B5F6);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-container {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 15px;
+            width: 480px;
+            text-align: center;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 0.6s ease-in-out;
+        }
+
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .login-container img {
+            width: 70%;
+            margin-bottom: 15px;
+        }
+
+        .login-container h1 {
+            margin-bottom: 20px;
+            color: #1a76c7;
+            font-size: 24px;
+        }
+
+        .login-container label {
+            display: block;
+            text-align: left;
+            margin: 10px 0 5px;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .login-container input:focus {
+            border-color: #4facfe;
+            box-shadow: 0px 0px 5px rgba(79, 172, 254, 0.6);
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 12px;
+            background: #4facfe;
+            border: none;
+            color: #fff;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .login-container button:hover {
+            background: #3b82f6;
+        }
+
+        .login-container .register {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .login-container .register a {
+            color: #4facfe;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .login-container .register a:hover {
+            text-decoration: underline;
+        }
+        .erro-msg {
+            background: #ffe5e5;
+            color: #d9534f;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #f5c2c2;
+            animation: fadeIn 0.5s ease-in-out;
+        }
